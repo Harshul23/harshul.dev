@@ -1,16 +1,16 @@
-# 🚀 harshul.dev — My Digital Playground
+# Harshul.dev — My Digital Playground
 
 Welcome to **harshul.dev**, my personal portfolio — a space where creativity meets code and ideas evolve into reality.  
 This site is my living canvas to showcase projects, experiments, and the journey of a CSE–AI student constantly building and learning.
 
 ---
 
-## 🌐 Live Preview  
+## Live Preview  
 👉 [harshul.dev]()
 
 ---
 
-## 🧠 About  
+## About  
 I'm **Harshul**, a CSE–AI student at Vedam School of Technology who treats the codebase as a *canvas for creativity*.  
 I love turning abstract thoughts into functional design and crafting experiences that feel alive.
 
@@ -20,7 +20,7 @@ Currently working on:
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 Built with:
 - **Frontend:** HTML, Tailwind CSS, JavaScript  
 - **Design:** Figma, Framer  
@@ -29,7 +29,7 @@ Built with:
 
 ---
 
-## 📅 Ongoing Journey  
+## Ongoing Journey  
 - Exploring **DSA problem-solving** daily  
 - Active in **Open Source**, **E-Sports**, and **Entrepreneurship** clubs  
 - Learning, experimenting, and building projects that merge creativity with logic  
@@ -43,12 +43,12 @@ Built with:
 
 ---
 
-## 📬 Contact  
-💼 [LinkedIn](https://linkedin.com/in/harshul)  
-📧 harshul@devmail.com
+## Contact  
+ [LinkedIn](https://linkedin.com/in/harshul)  
+ harshul@devmail.com
 
 ---
 
-### 🧩 License  
+### License  
 This project is open for inspiration, not duplication. Be original.  
 © 2025 Harshul. All rights reserved.
