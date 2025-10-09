@@ -45,7 +45,7 @@ Built with:
 
 ## 📬 Contact  
 💼 [LinkedIn](https://linkedin.com/in/harshul)  
-📧 harshul@devmail.com (replace with your real mail)  
+📧 harshul@devmail.com
 
 ---
 
