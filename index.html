@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Harshul's sandbox</title>
+</head>
+<body>
+
+    <!-- navbar -->
+<nav class="sm:flex flex-row h-16 text-black justify-center m-2 mt-4 rounded-lg w-8xl hidden">
+    <ul class="flex gap-28 justify-between items-center ">
+
+        <a class="navbtn" href="index.html">
+            <li>Home</li>
+        </a><a class="navbtn" href="about.html">
+            <li>About Me</li>
+        </a><a class="navbtn" href="">
+            <li>Projects</li>
+        </a><a class="navbtn" href="">
+            <li>Contact</li>
+        </a>
+    </ul>
+</nav>    
+
+<!-- Nav for mobile Screen -->
+<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<nav class="relative bg-blue-200 rounded-2xl mx-2 my-2 sm:hidden">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.8" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.8" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden z-30">
+    <div class="space-y-1 px-2 pt-2 pb-3 bg-blue-200 rounded-b-2xl z-30">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+      <a href="index.html" aria-current="page" class="block rounded-md bg-blue-500 px-3 py-2 text-base font-medium text-white">Home</a>
+      <a href="about.html" class="block rounded-md px-3 py-2 font-medium text-black hover:bg-white/5 hover:text-white">About Me</a>
+      <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white">Contact</a>
+    </div>
+  </el-disclosure>
+</nav>
+
+
+<!-- hero section  -->
+<header class="flex flex-col-reverse sm:flex-row items-center sm:items-start sm:pt-28 justify-center pt-6 min-h-[85vh] max-w-[100vw] gap-4 sm:gap-16 p-6">
+    
+    <div class="profile group min-w-72 flex flex-col items-center gap-4 relative">
+        <div class="picon  h-12 w-14  z-0 bg-amber-400 rounded-bl-xl rounded-t-xl absolute bg-[url(/assets/laptop.png)] bg-center bg-no-repeat bg-size-[3em] top-16 left-2 sm:top-16 shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black]  transition-all duration-200 delay-10 sm:left-0"></div>
+        <div class="picon  h-16 w-16 bg-amber-400 rounded-full absolute bg-[url(/assets/coding.png)] bg-center bg-size-[3em] bg-no-repeat top-[10em] mt-10 sm:left-55 left-56 shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black] transition-all duration-200 delay-10"></div>
+        <div class="picon h-56 w-56 rounded-bl-2xl rounded-tr-2xl bg-blue-400 shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black] transition-all duration-200 delay-10 mt-6 sm:mt-14"></div>
+        <a href="about.html"><button class="p-1 bg-yellow-400 font-semibold rounded-2xl px-4 m-3 border-2 shadow-[4px_4px_0px_black] hover:shadow-[8px_8px_0px_black] transition-all duration-200 delay-10">More about Me</button></a>
+    </div>
+   
+    <div class="des flex flex-col justify-start gap-3 mt-0 sm:mt-16 sm:justify-items-start sm:max-w-[50vw]">
+        <p class="font-semibold text-xl sm:text-2xl text-gray-600 italic">Explore | Create | Evolve</p>
+        <h1 class="text-[2.5em] sm:text-6xl font-black"><span class="text-gray-700">Hi, I am</span>  Harshul</h1>
+        <p class="px-2 font-semibold text-gray-600 text-2xl sm:text-4xl pl-1.5">A CSE-AI Student who treats codebase as a canvas for insane creativity.</p>
+    </div>
+    <img src="assets/
+down-arrow.png" alt="down-arrow" class="h-6 w-6 absolute sm:bottom-16 -bottom-18 right-1/2 animate-bounce">
+</header>
+
+<h1 class="font-black text-4xl sm:text-5xl m-6 mt-20 sm:m-12">Learning At</h1>
+<div class="group h-[90vh] w-[100vw] flex justify-between">
+        <div class="flex flex-col justify-start gap-0 max-w-[60vw]">
+        <div class="flex gap-8 ml-10">
+            <div class="h-24 w-24 bg-white border-2 rounded-lg shadow-[8px_8px_0px_black] bg-[url(/assets/vedam.webp)] bg-no-repeat bg-size-[5em] bg-center hover:shadow-[12px_12px_0px_black] transition-all duration-200 delay-10"></div>
+            <div class="flex flex-col gap-1">
+                <p class="font-semibold text-3xl mt-2">Vedam School of Technology <span class="text-orange-500 font-bold text-2xl ml-4 mb-4">• 2025</span> </p>
+                <p class="text-xl font-semibold text-gray-700">B.Tech CSE | Designing the future with a creative lens.</p>
+            </div>
+        </div>
+    <div class="status m-14 text-xl font-semibold text-gray-700 pl-8">
+        <p>&#10022;  Currently sharpening my Data Structures and Algorithms skills through daily LeetCode challenges.</p>
+        <p class="mt-3">&#10022;  Exploring creative web development with Tailwind CSS</p>
+        <p class="mt-3">&#10022;  Exploring the world of open-source by contributing to projects under the GSoC community.</p>
+        <p class="mt-3">&#10022;  Actively part of three college clubs Open Source, E-Sports, and Entrepreneurship to learn, build, and collaborate beyond the classroom.</p>
+        
+    </div>
+</div>
+<div class="relative h-[70vh] w-[50vw] overflow-hidden rounded-bl-2xl rounded-tl-2xl mt-5">
+  <!-- The fixed image container -->
+  <div class="absolute inset-0">
+    <img src="assets/
+/8.png" 
+         class="h-[70vh] w-[65vw] scale-160 object-cover pointer-events-none" />
+  </div>
+
+  <!-- The moving outer div -->
+  <div class="absolute inset-0 h-[88vh] w-[60vw] bg-transparent border-[2em] border-white transition-all duration-600 ease-in group-hover:-translate-x-12 group-hover:-translate-y-12">
+  </div>
+</div>
+</div>
+</div>
+
+
+<h1 class="font-black text-5xl m-12 text-center mt-16">Going on...</h1>
+<div class="grid grid-cols-3 grid-rows-3 gap-4 max-h-[120vh] w-[80vw] justify-center ml-28 items-center">
+    <div class="now p-5 rounded-2xl shadow-[6px_6px_0px_black] col-span-2 bg-amber-200 rotate-3 mt-8">
+        <p>Exploring patterns beneath the syntax through daily problem solving.</p><br>
+        <h3>Learning ~</h3>
+    </div>
+    <div class="now p-5 rounded-2xl shadow-[6px_6px_0px_black] bg-blue-200 -rotate-2">
+        <p class="text-4xl">Exploring open-source projects learning how real world code breathes.</p><br>
+        <h3>Open Source ~</h3>
+    </div>
+    <div class="now p-5 rounded-2xl shadow-[6px_6px_0px_black] row-span-2 h-100 bg-cyan-200 -rotate-4 ">
+        <p>Competing with friends in E-Sports because strategy isn’t just for code.</p> <br>
+        <h3>E-Sports ~</h3>
+    </div>
+    <div class="now p-5 rounded-2xl shadow-[6px_6px_0px_black] col-span-2 bg-green-200 -rotate-2 mt-24">
+        <p class="text-5xl">Growing with the Entrepreneurship club building ideas that could actually matter.</p><br>
+        <h3>Entrepreneurship ~</h3>
+    </div>
+    <div class="now p-5 rounded-2xl shadow-[6px_6px_0px_black] bg-orange-200 rotate-3 mt-44">
+        <p class="text-4xl">Designing small ideas into real, interactive experiences.</p><br>
+        <h3>Creativity ~</h3>
+    </div>
+    <div class="now p-5 rounded-2xl shadow-[6px_6px_0px_black] bg-purple-200 -rotate-2 mt-32">
+        <p class="text-4xl">Experimenting with new tools, from AI models to design frameworks.</p><br>
+        <h3>Rising ~</h3>
+    </div>
+</div>
+<p class="text-xl text-gray-600 italic text-center mt-44">Still learning. Still exploring. Still obsessed with building something that feels alive...</p>
+
+<div class="contact flex flex-row p-12 justify-evenly items-center my-12">
+    <div class="card h-[86.5vh] w-[30vw] p-4 pb-0 rounded-2xl bg-[#82E4FF]">
+        <div class="name flex items-center">
+            <div class="avt rounded-2xl w-[7em] h-[7em] bg-gray-500 m-8"></div>
+            <div class="flex flex-col gap-2">
+                <p class="text-5xl font-black text-black">Harshul</p>
+                <p class="text-[#3B3B3B] font-bold">CSE-AI Student @ vedam</p>
+            </div>
+        </div>
+        <hr>
+        <p class="text-2xl p-6 font-bold text-black">My Evolving Stack</p>
+        <div class="grid grid-cols-6">
+            <img src="assets/
+html.png" alt="html">
+            <img src="assets/
+css.png" alt="css">
+            <img src="assets/
+js.png" alt="java script">
+            <img src="assets/
+tailwind.png" alt="tailwind">
+            <img src="assets/
+java.png" alt="java">
+            <img src="assets/
+git.png" alt="git">
+        </div>
+        <div class="rounded-t-2xl bg-[#E6F4FF] h-60 mt-6 py-6 px-6">
+            <p class="text-2xl font-bold mb-3">The Labs Behind My Vision</p>
+            <p class="text-[1em] font-semibold text-gray-700">Currently building OpenIdeas a space where sparks of imagination grow into real-world builds, and Assemble a hub crafted for developers to showcase their creative edge. Turning raw ideas into code that speaks and design that breathes.</p>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between p-8">
+         <h1 class="text-5xl font-black">Have an idea <br> or want to collaborate? Let’s talk.</h1>
+    <form action="#" method="POST" class="m-6 mt-0 max-w-xl sm:mt-6">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div>
+        <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">Full name</label>
+        <div class="mt-2.5">
+          <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
+        <div class="mt-2.5">
+          <input id="email" type="email" name="email" autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
+        <div class="mt-2.5">
+          <textarea id="message" name="message" rows="4" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10">
+      <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+    </div>
+  </form>
+  </div>
+</div>
+
+<div class="foot bg-sky-100 p-0.5">
+    <div class="links flex gap-14 justify-center m-12 mt-24">
+    <a href="">
+        <div class="h-20 w-20 bg-black rounded-2xl shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10 bg-[url(/assets/github.png)] bg-no-repeat bg-size-[5em]"></div>
+    </a>
+    <a href="">
+        <div class="h-20 w-20 bg-black rounded-2xl shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10 bg-[url(/assets/linkedin.png)] bg-no-repeat bg-size-[5em]"></div>
+    </a>
+    <a href="">
+        <div class="h-20 w-20 bg-black rounded-2xl shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10 bg-[url(/assets/instagram.png)] bg-no-repeat bg-size-[5.5em] bg-center"></div>
+    </a>
+    <a href="">
+        <div class="h-20 w-20 bg-black rounded-2xl shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10 bg-[url(/assets/twitter.png)] bg-no-repeat bg-size-[5em]"></div>
+    </a>
+</div>
+<h1 class="text-xl text-center font-semibold m-10">© 2025 Harvit Creations. All rights reserved.</h1>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+</html>

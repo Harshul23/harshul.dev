@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Optional: CSS-first config in v4 — define theme variables here */
+@theme {
+  /* example custom color that creates bg-mint-500, text-mint-500, etc. */
+  --color-mint-500: oklch(0.72 0.11 178);
+  --shadow-3xl: 0 35px 35px rgba(0, 0, 0, 0.5);
+}
+
+@layer components {
+  .navbtn {
+    @apply p-2 px-3 rounded-lg hover:bg-blue-300;
+  }
+  .now h3 {
+    @apply text-2xl font-bold text-gray-600;
+  }
+  .now p {
+    @apply text-5xl font-bold;
+  }
+
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
