@@ -1,12 +1,12 @@
 # Harshul.dev — My Digital Playground
 
-Welcome to **harshul.dev**, my personal portfolio — a space where creativity meets code and ideas evolve into reality.  
+Welcome to **harshul.dev**, my personal portfolio, a space where creativity meets code and ideas evolve into reality.  
 This site is my living canvas to showcase projects, experiments, and the journey of a CSE–AI student constantly building and learning.
 
 ---
 
 ## Live Preview  
-👉 [harshul.dev]()
+👉 [harshul.dev](https://harshul23.github.io/harshul.dev/)
 
 ---
 
@@ -22,9 +22,9 @@ Currently working on:
 
 ## Tech Stack  
 Built with:
-- **Frontend:** HTML, Tailwind CSS, JavaScript  
-- **Design:** Figma, Framer  
-- **Hosting:** Vercel  
+- **Frontend:** HTML, Tailwind CSS and little JavaScript  
+- **Design:** Figma  
+- **Hosting:** Git-hub Pages  
 - **Version Control:** Git + GitHub  
 
 ---
@@ -44,7 +44,7 @@ Built with:
 ---
 
 ## Contact  
- [LinkedIn](https://linkedin.com/in/harshul)  
+ [LinkedIn]()  
  harshul@devmail.com
 
 ---

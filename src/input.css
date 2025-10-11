@@ -8,14 +8,17 @@
 }
 
 @layer components {
+  html {
+    font-family: 'Lato';
+  }
   .navbtn {
     @apply p-2 px-3 rounded-lg hover:bg-blue-300;
   }
   .now h3 {
-    @apply text-2xl font-bold text-gray-600;
+    @apply sm:text-2xl text-sm font-bold text-gray-600 w-dvw inline;
   }
   .now p {
-    @apply text-5xl font-bold;
+    @apply sm:text-5xl text-xl font-bold;
   }
 
 }
