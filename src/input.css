@@ -12,7 +12,7 @@
     font-family: 'Lato';
   }
   .navbtn {
-    @apply p-2 px-3 rounded-lg hover:bg-blue-300;
+    @apply p-2 px-3 rounded-2xl hover:bg-blue-300;
   }
   .now h3 {
     @apply sm:text-2xl text-sm font-bold text-gray-600 w-dvw inline;
