@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 /* Optional: CSS-first config in v4 — define theme variables here */
 @theme {
   /* example custom color that creates bg-mint-500, text-mint-500, etc. */
@@ -12,7 +12,7 @@
     font-family: 'Lato';
   }
   .navbtn {
-    @apply p-2 px-3 rounded-2xl hover:bg-blue-300;
+    @apply p-2 px-3 rounded-xl hover:bg-blue-300  dark:hover:bg-white dark:hover:text-black;
   }
   .now h3 {
     @apply sm:text-2xl text-sm font-bold text-gray-600 w-dvw inline;

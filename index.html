@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Harshul's sandbox</title>
 </head>
-<body>
+<body class="dark:bg-black">
+
+<button id="theme-toggle" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded text-white">
+  Toggle Theme
+</button>
 
     <!-- navbar -->
-<nav class="sm:flex flex-row h-16 text-black font-semibold justify-center m-2 mt-4 rounded-lg w-8xl hidden">
+<nav class="sm:flex flex-row h-16 text-black font-semibold justify-center m-2 mt-4 rounded-lg w-8xl hidden dark:bg-black dark:text-white">
     <ul class="flex gap-28 justify-between items-center ">
 
         <a class="navbtn" href="index.html">
@@ -61,21 +65,22 @@
 
 
 <!-- hero section  -->
-<header class="flex flex-col-reverse sm:flex-row items-center sm:items-start sm:pt-12 sm:justify-center justify-end min-h-[85vh] max-w-[100vw] gap-14 sm:gap-16 p-8">
+<header class="flex flex-col-reverse sm:flex-row items-center sm:items-start sm:pt-12 sm:justify-center justify-end min-h-[85vh] max-w-[100vw] gap-14 sm:gap-16 p-8 dark:bg-black">
     
     <div class="profile group min-w-72 flex flex-col items-center gap-4 relative">
-        <div class="picon  h-12 w-14  z-0 bg-amber-400 rounded-bl-xl rounded-t-xl absolute bg-[url(assets/laptop.png)] bg-center bg-no-repeat bg-size-[3em] top-10 left-0 sm:top-16 shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black]  transition-all duration-200 delay-10 sm:left-0"></div>
-        <div class="picon  h-16 w-16 bg-amber-400 rounded-full absolute bg-[url(assets/coding.png)] bg-center bg-size-[3em] bg-no-repeat top-[13em] sm:left-55 left-56 shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black] transition-all duration-200 delay-10"></div>
+        <div class="picon  h-11 w-11  z-0 bg-amber-400 rounded-bl-xl rounded-t-xl absolute bg-[url(assets/laptop.png)] bg-center bg-no-repeat bg-size-[2em] top-10 sm:top-16 shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black]  transition-all duration-200 delay-10 sm:left-0"></div>
+        <div class="picon  h-12 w-12 bg-amber-400 rounded-full absolute bg-[url(assets/coding.png)] bg-center bg-size-[2em] bg-no-repeat top-[13em] sm:left-55 left-56 shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black] transition-all duration-200 delay-10"></div>
         <div class="picon h-56 w-56 mr-4 sm:mr-0 rounded-bl-2xl rounded-tr-2xl bg-blue-400 bg-[url(assets/harshul.jpeg)] bg-cover shadow-[8px_8px_0px_black] group-hover:shadow-[12px_12px_0px_black] transition-all duration-200 delay-10 mt-6 sm:mt-14"></div>
         <a href="about.html"><button class="p-1 bg-yellow-400 font-semibold rounded-2xl px-4 m-3 mr-4 sm:mr-0 border-2 shadow-[4px_4px_0px_black] hover:shadow-[8px_8px_0px_black] transition-all duration-200 delay-10">More about Me</button></a>
     </div>
    
     <div class="des flex flex-col justify-start gap-3 mt-0 sm:mt-16 sm:justify-items-start sm:max-w-[50vw]">
-        <p class="font-semibold text-xl sm:text-2xl text-gray-600 italic">Explore | Create | Evolve</p>
-        <h1 class="text-[2.5em] sm:text-6xl font-black"><span class="text-gray-700">Hi, I am</span>  Harshul</h1>
-        <p class="px-2 font-semibold text-gray-600 text-2xl sm:text-4xl pl-1.5">A CSE-AI Student who treats codebase as a canvas for insane creativity.</p>
+        <p class="font-semibold text-xl sm:text-2xl text-gray-600 dark:text-gray-400 italic">Explore | Create | Evolve</p>
+        <h1 class="text-[2.5em] sm:text-6xl dark:text-white font-black"><span class="text-gray-700 dark:text-gray-400">Hi, I am</span>  Harshul</h1>
+        <p class="px-2 font-semibold text-gray-700 dark:text-gray-300 text-2xl  sm:text-4xl pl-1.5">A CSE-AI Student who treats codebase as a canvas for insane creativity.</p>
     </div>
-    <img src="assets/down-arrow.png" alt="down-arrow" class="h-6 w-6 absolute sm:bottom-16 -bottom-0 right-1/2 animate-bounce">
+    <img src="assets/down-arrowWhite.png" alt="down-arrow" class="h-6 w-6 hidden dark:block absolute sm:bottom-16 -bottom-0 right-1/2 animate-bounce">
+    <img src="assets/down-arrow.png" alt="down-arrow" class="h-6 w-6 block dark:hidden absolute sm:bottom-16 -bottom-0 right-1/2 animate-bounce">
 </header>
 
 <h1 class="font-black text-4xl sm:text-6xl m-6 mt-20 sm:my-4 mb-0 ">Learning At</h1>
@@ -84,11 +89,11 @@
         <div class="flex gap-5 sm:gap-8 sm:my-6 sm:mt-0">
             <div class="sm:h-24 sm:w-24 h-[4.5em] w-20 p-2 bg-white border-2 rounded-lg shadow-[8px_8px_0px_black] bg-[url(assets/vedam.webp)] bg-no-repeat bg-size-[5em] bg-center hover:shadow-[12px_12px_0px_black] transition-all duration-200 delay-10"></div>
             <div class="flex flex-col gap-1">
-                <p class="font-black text-xl sm:text-4xl mt-2">Vedam School of Technology <span class="text-orange-500 sm:ml-4 sm:text-xl sm:inline font-bold text-xl hidden mb-4">• 2025</span> </p>
-                <p class="text-sm sm:text-xl font-semibold text-gray-700">B.Tech CSE | Designing the future with a creative lens.</p>
+                <p class="font-black dark:text-white text-xl sm:text-4xl mt-2">Vedam School of Technology <span class="text-orange-500 sm:ml-4 sm:text-xl sm:inline font-bold text-xl hidden mb-4">• 2025</span> </p>
+                <p class="text-sm sm:text-xl font-semibold text-gray-700 dark:text-gray-400">B.Tech CSE | Designing the future with a creative lens.</p>
             </div>
         </div>
-    <div class="status sm:m-10 m-3 mt-6 sm:ml-1  sm:text-xl text-sm font-semibold text-gray-700 sm:pl-8 p-0 flex flex-col gap-2 sm:max-w-[60vw]">
+    <div class="status sm:m-10 m-3 mt-6 sm:ml-1  sm:text-xl text-sm font-semibold text-gray-700 dark:text-gray-200 sm:pl-8 p-0 flex flex-col gap-2 sm:max-w-[60vw]">
         <p>&#10022;  Currently sharpening my Data Structures and Algorithms skills through daily LeetCode challenges.</p>
         <p class="mt-3">&#10022;  Exploring creative web development with Tailwind CSS</p>
         <p class="mt-3">&#10022;  Exploring the world of open-source by contributing to projects under the GSoC community.</p>
@@ -104,14 +109,14 @@
   </div>
 
   <!-- The moving outer div -->
-  <div class="absolute inset-0 h-[88vh] w-[60vw] bg-transparent border-[2em] border-white hidden sm:inline transition-all duration-600 ease-in group-hover:-translate-x-12 group-hover:-translate-y-12">
+  <div class="absolute inset-0 h-[88vh] w-[60vw] bg-transparent border-[2em] border-white dark:border-black hidden sm:inline transition-all duration-600 ease-in group-hover:-translate-x-12 group-hover:-translate-y-12">
   </div>
 </div>
 </div>
 </div>
 
 
-<h1 class="font-black text-5xl sm:m-12 text-center sm:mt-16 mt-0">Going on...</h1>
+<h1 class="font-black dark:text-white text-5xl sm:m-12 text-center sm:mt-16 mt-0">Going on...</h1>
 <div class="sm:grid grid-cols-3 grid-rows-3 gap-4 sm:max-h-[140vh] sm:w-[80vw] justify-center px-5 py-12 sm:ml-28 sm:mt-24 items-center flex flex-col">
     <div class="now p-5 rounded-2xl shadow-[6px_6px_0px_black] col-span-2 bg-amber-200 rotate-3 sm:mt-8 mt-0">
         <p>Exploring patterns beneath the syntax through daily problem solving.</p><br>
@@ -138,47 +143,47 @@
         <h3>Rising ~</h3>
     </div>
 </div>
-<p class="sm:text-2xl text-lg text-gray-600 italic text-center mx-6 sm:mt-44">Still learning. Still exploring. Still obsessed with building something that feels alive...</p>
+<p class="sm:text-2xl text-lg text-gray-600 dark:text-gray-300 italic text-center mx-6 sm:mt-44">Still learning. Still exploring. Still obsessed with building something that feels alive...</p>
 
 <div class="contact flex sm:flex-row flex-col sm:p-12 p-6 justify-center items-center sm:my-12 my-12 gap-8">
-    <div class="card sm:h-[94vh] sm:w-[30vw]  p-4 pb-0 rounded-2xl bg-white border-2 flex justify-between flex-col shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10">
+    <div class="card sm:h-[94vh] sm:w-[30vw]  p-4 pb-0 mt-10 rounded-2xl bg-white dark:bg-black dark:border-white border-2 flex justify-between flex-col shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10">
         <div class="name flex items-center justify-center sm:gap-8 gap-5 my-5">
-            <div class="avt rounded-2xl w-[7em] h-[7em] bg-gray-500 bg-[url(assets/harshul.jpeg)] bg-cover border-2"></div>
+            <div class="avt rounded-2xl w-[7em] h-[7em] bg-gray-500 bg-[url(assets/harshul.jpeg)] dark:shadow-[0em_0em_1em_gray] dark:border-none bg-cover border-2"></div>
             <div class="flex flex-col gap-2">
-                <p class="text-5xl font-black text-black">Harshul</p>
-                <p class="text-[#3B3B3B] font-bold">CSE-AI Student @ vedam</p>
+                <p class="text-5xl font-black text-black dark:text-white">Harshul</p>
+                <p class="text-[#3B3B3B] dark:text-gray-300 font-bold">CSE-AI Student @ vedam</p>
             </div>
         </div>
         <hr>
-        <p class="text-2xl p-2 font-bold text-black">My Evolving Stack</p>
+        <p class="text-2xl p-2 font-bold text-black dark:text-white">My Evolving Stack</p>
         <p><img src="https://skillicons.dev/icons?i=js,java,html,css,tailwind" /></p>
-        <p class="text-xl p-2 pl-0 pb-0 font-bold text-black">Other Technologies</p>
+        <p class="text-xl p-2 pl-0 pb-0 font-bold text-black dark:text-white">Other Technologies</p>
         <p><img src="https://skillicons.dev/icons?i=git,github,figma" /></p>
-        <div class="rounded-t-2xl bg-[#E6F4FF] h-52 mt-6 py-4 px-4">
-            <p class="text-[1.3em] font-bold mb-3">The Labs Behind My Vision</p>
-            <p class="text-[0.9em] font-semibold text-gray-700">Currently building OpenIdeas a space where sparks of imagination grow into real-world builds, and Assemble a hub crafted for developers to showcase their creative edge. Turning raw ideas into code that speaks and design that breathes.</p>
+        <div class="rounded-t-2xl bg-[#E6F4FF] h-52 mt-6 py-4 px-4 dark:bg-gray-800 dark:border-white dark:border-2">
+            <p class="text-[1.3em] font-bold mb-3 dark:text-white">The Labs Behind My Vision</p>
+            <p class="text-[0.9em] font-semibold text-gray-700 dark:text-gray-400">Currently building OpenIdeas a space where sparks of imagination grow into real-world builds, and Assemble a hub crafted for developers to showcase their creative edge. Turning raw ideas into code that speaks and design that breathes.</p>
         </div>
     </div>
     <div class="flex flex-col justify-between gap-8 sm:gap-0 sm:p-8 mt-5 w-[24em] sm:w-[60vw] p-4">
-         <h1 class="sm:text-5xl text-3xl font-black sm:m-5 mb-0 my-4 mx-2 sm:mx-0">Have an idea <br> or want to collaborate? Let’s talk.</h1>
+         <h1 class="sm:text-5xl text-3xl font-black dark:text-white sm:m-5 mb-0 my-4 mx-2 sm:mx-0">Have an idea <br> or want to collaborate? Let’s talk.</h1>
     <form action="#" method="POST" class="mx-2 mt-0 max-w-xl sm:mt-3">
     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div>
-        <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">Full name</label>
+        <label for="first-name" class="block text-sm/6 font-semibold text-gray-900 dark:text-white">Full name</label>
         <div class="mt-2.5">
-          <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+          <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="block w-full rounded-md dark:bg-black bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
         </div>
       </div>
       <div class="sm:col-span-2">
-        <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
+        <label for="email" class="block text-sm/6 font-semibold text-gray-900 dark:text-white">Email</label>
         <div class="mt-2.5">
-          <input id="email" type="email" name="email" autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+          <input id="email" type="email" name="email" autocomplete="email" class="block w-full rounded-md dark:bg-black bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
         </div>
       </div>
       <div class="sm:col-span-2">
-        <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
+        <label for="message" class="block text-sm/6 font-semibold text-gray-900 dark:text-white">Message</label>
         <div class="mt-2.5">
-          <textarea id="message" name="message" rows="4" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"></textarea>
+          <textarea id="message" name="message" rows="4" class="block w-full rounded-md dark:bg-black bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-500 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"></textarea>
         </div>
       </div>
     </div>
@@ -189,7 +194,7 @@
   </div>
 </div>
 
-<div class="foot bg-sky-100 p-0.5">
+<div class="foot bg-sky-100 p-0.5 dark:bg-black">
     <div class="links flex sm:gap-14 gap-6 justify-center m-12 mt-24">
     <a href="https://github.com/Harshul23/harshul.dev" target="_blank">
         <div class="sm:h-20 sm:w-20 h-14 w-14 bg-black rounded-2xl shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10 bg-[url(assets/github.png)] bg-cover bg-no-repeat"></div>
@@ -204,9 +209,10 @@
         <div class="sm:h-20 sm:w-20 h-14 w-14 bg-black rounded-2xl shadow-[8px_8px_0px_black] hover:shadow-[14px_14px_0px_black]   transition-all duration-200 delay-10 bg-[url(assets/twitter.png)] bg-no-repeat bg-cover"></div>
     </a>
 </div>
-<h1 class="sm:text-xl text-sm text-center font-semibold m-10">© 2025 Harvit Creations. All rights reserved.</h1>
+<h1 class="sm:text-xl text-sm text-center font-semibold m-10 dark:text-white">© 2025 Harvit Creations. All rights reserved.</h1>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+<script src="script.js"></script>
 </body>
 </html>
