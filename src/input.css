@@ -39,7 +39,9 @@
   body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+    transition-property: background-color, color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: ease;
   }
   
   .navbtn {
@@ -69,7 +71,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all var(--transition-duration) ease;
+    transition-property: all;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: ease;
     box-shadow: 4px 4px 0px var(--card-shadow);
   }
   
