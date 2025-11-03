@@ -25,7 +25,7 @@
   --text-secondary: #e5e5e5;
   --text-muted: #a1a1a1;
   --border-color: #404040;
-  --card-shadow: rgba(64, 64, 64, 0.8);
+  --card-shadow: #404040cc;
 }
 
 @layer components {

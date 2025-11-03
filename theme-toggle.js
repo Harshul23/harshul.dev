@@ -5,6 +5,11 @@
     const moonIcon = document.getElementById('moonIcon');
     const html = document.documentElement;
     
+    // Exit early if required elements don't exist
+    if (!themeToggle || !sunIcon || !moonIcon) {
+        return;
+    }
+    
     // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     
