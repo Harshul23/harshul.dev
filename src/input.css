@@ -15,7 +15,7 @@
   --text-secondary: #3b3b3b;
   --text-muted: #6b7280;
   --border-color: #000000;
-  --card-shadow: rgba(0, 0, 0, 1);
+  --card-shadow: #000000;
 }
 
 :root.dark {
