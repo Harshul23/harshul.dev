@@ -11,16 +11,19 @@
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f0f9ff;
+  --bg-tertiary: #e6f4ff;
   --text-primary: #000000;
   --text-secondary: #3b3b3b;
   --text-muted: #6b7280;
   --border-color: #000000;
   --card-shadow: #000000;
+  --transition-duration: 0.3s;
 }
 
 :root.dark {
   --bg-primary: #1a1a1a;
   --bg-secondary: #2d2d2d;
+  --bg-tertiary: #1e3a4a;
   --text-primary: #ffffff;
   --text-secondary: #e5e5e5;
   --text-muted: #a1a1a1;
@@ -36,7 +39,7 @@
   body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
   }
   
   .navbtn {
@@ -66,7 +69,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all var(--transition-duration) ease;
     box-shadow: 4px 4px 0px var(--card-shadow);
   }
   
@@ -97,7 +100,7 @@
   }
   
   :root.dark .bg-sky-100 {
-    background-color: #1e3a4a !important;
+    background-color: var(--bg-tertiary) !important;
   }
   
   :root.dark .shadow-\[4px_4px_0px_black\],
