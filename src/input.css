@@ -20,6 +20,12 @@
   .now p {
     @apply sm:text-5xl text-xl font-bold;
   }
+  .pcard {
+    @apply flex flex-col gap-[1em] p-[1em] rounded-[1em] max-w-[33%] justify-evenly items-center h-[60vh] border-[0.08em]
+  }
+  .plang {
+    @apply flex gap-10
+  }
 
 }
 * {
