@@ -7,18 +7,105 @@
   --shadow-3xl: 0 35px 35px rgba(0, 0, 0, 0.5);
 }
 
+/* Dark mode color variables */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f9ff;
+  --text-primary: #000000;
+  --text-secondary: #3b3b3b;
+  --text-muted: #6b7280;
+  --border-color: #000000;
+  --card-shadow: rgba(0, 0, 0, 1);
+}
+
+:root.dark {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --text-muted: #a1a1a1;
+  --border-color: #404040;
+  --card-shadow: rgba(64, 64, 64, 0.8);
+}
+
 @layer components {
   html {
     font-family: 'Lato';
   }
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
   .navbtn {
     @apply p-2 px-3 rounded-2xl hover:bg-blue-300;
   }
+  
   .now h3 {
     @apply sm:text-2xl text-sm font-bold text-gray-600 w-dvw inline;
   }
+  
   .now p {
     @apply sm:text-5xl text-xl font-bold;
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 50;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 0px var(--card-shadow);
+  }
+  
+  .theme-toggle:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--card-shadow);
+  }
+  
+  .theme-toggle svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--text-primary);
+  }
+  
+  /* Dark mode specific overrides */
+  :root.dark .bg-white {
+    background-color: var(--bg-secondary) !important;
+  }
+  
+  :root.dark .text-black {
+    color: var(--text-primary) !important;
+  }
+  
+  :root.dark .text-gray-600,
+  :root.dark .text-gray-700,
+  :root.dark .text-gray-900 {
+    color: var(--text-muted) !important;
+  }
+  
+  :root.dark .bg-sky-100 {
+    background-color: #1e3a4a !important;
+  }
+  
+  :root.dark .shadow-\[4px_4px_0px_black\],
+  :root.dark .shadow-\[6px_6px_0px_black\],
+  :root.dark .shadow-\[8px_8px_0px_black\],
+  :root.dark .shadow-\[12px_12px_0px_black\],
+  :root.dark .shadow-\[14px_14px_0px_black\] {
+    --tw-shadow-color: var(--card-shadow);
   }
 
 }
