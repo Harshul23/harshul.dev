@@ -1,0 +1,61 @@
+name: harshul
+language: Node
+run: npm run dev
+setup: npm run build
+setup_required: true
+package_manager: npm
+env_vars:
+    - name: ACTION_
+      required: false
+    - name: ACTION_ID_
+      required: false
+    - name: ACTION_REF_
+      required: false
+    - name: CHUNK_BASE_PATH
+      required: false
+    - name: CHUNK_SUFFIX
+      required: false
+    - name: CLIENT_STATIC_FILES_RUNTIME_MAIN
+      required: false
+    - name: ERROR_CODE_DELIMITER
+      required: false
+    - name: FORM_ACTION
+      required: false
+    - name: IS_SIGNATURE_EQUAL
+      required: false
+    - name: KEY_SEPARATOR
+      required: false
+    - name: MIDDLEWARE_FILENAME
+      required: false
+    - name: NEXT_DEBUG_BUILD
+      required: false
+    - name: NEXT_OTEL_FETCH_DISABLED
+      required: false
+    - name: NEXT_OTEL_PERFORMANCE_PREFIX
+      required: false
+    - name: NEXT_OTEL_VERBOSE
+      required: false
+    - name: NEXT_PRIVATE_RESPONSE_CACHE_MAX_SIZE
+      required: false
+    - name: NEXT_PRIVATE_RESPONSE_CACHE_TTL
+      required: false
+    - name: PARAM_SEPARATOR
+      required: false
+    - name: PROXY_FILENAME
+      required: false
+    - name: REACT_HYDRATION_ERROR_LINK
+      required: false
+    - name: UNAVAILABLE_MARKER
+      required: false
+    - name: UNDERSCORE_GLOBAL_ERROR_ROUTE
+      required: false
+    - name: UNDERSCORE_NOT_FOUND_ROUTE
+      required: false
+    - name: VERCEL_BRANCH_URL
+      required: false
+    - name: VERCEL_ENV
+      required: false
+    - name: VERCEL_PROJECT_PRODUCTION_URL
+      required: false
+    - name: VERCEL_URL
+      required: false
