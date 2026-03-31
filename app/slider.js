@@ -36,9 +36,9 @@ function TechCard({ tech }) {
   const Icon = tech.icon;
 
   return (
-    <div className="flex min-w-[180px] shrink-0 items-center gap-3 rounded-2xl border border-white/20 bg-white/[0.04] px-5 py-4 backdrop-blur-md transition-transform duration-300">
-      <Icon className={`text-3xl ${tech.color}`} />
-      <span className="whitespace-nowrap text-sm font-medium tracking-wide text-white md:text-base">
+    <div className="flex min-w-[140px] sm:min-w-[160px] md:min-w-[180px] shrink-0 items-center gap-2 sm:gap-3 rounded-xl sm:rounded-2xl border border-white/20 bg-white/[0.04] px-3 sm:px-4 md:px-5 py-3 sm:py-4 backdrop-blur-md transition-transform duration-300">
+      <Icon className={`text-2xl sm:text-3xl ${tech.color}`} />
+      <span className="whitespace-nowrap text-xs sm:text-sm md:text-base font-medium tracking-wide text-white">
         {tech.name}
       </span>
     </div>
@@ -68,9 +68,9 @@ function TechRow({ items, reverse = false, duration = 30 }) {
 export default function TechStackSlider() {
   return (
     <>
-      <section className="w-full bg-black py-14">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="space-y-5">
+      <section className="w-full bg-black py-8 sm:py-10 md:py-12 lg:py-14">
+        <div className="mx-auto max-w-7xl px-2 sm:px-4">
+          <div className="space-y-3 sm:space-y-4 md:space-y-5">
             <TechRow items={firstRow} reverse duration={30} />
             <TechRow items={secondRow} duration={26} />
           </div>
