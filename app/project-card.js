@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
         )}
       </div>
 
-      <div className="h-50 sm:h-75 md:h-100 lg:h-4/5 w-full lg:w-3/5 bg-white rounded-2xl overflow-hidden shadow-lg flex items-center justify-center relative">
+      <div className="h-50 hover:border-2 hover:border-white sm:h-75 md:h-100 lg:h-4/5 w-full lg:w-3/5 bg-white rounded-2xl overflow-hidden shadow-lg flex items-center justify-center relative">
         {props.video ? (
           <video
             src={props.video}

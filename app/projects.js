@@ -22,13 +22,13 @@ const Projects = () => {
         />
         <ProjectCard
           name="sup"
-          description="A minimalist real-time chat application for quick and secure communication."
+          description="A modern, AI-powered GitHub productivity dashboard that helps developers track their contributions, manage projects, and more."
           link="https://octo-alpha.vercel.app/"
           image="/sup.png"
         />
         <ProjectCard
           name="plex"
-          description="A media center management tool for organizing and streaming your favorite content."
+          description="Plex is a modern, Open Source Project showcase platform for sharing creative code experiments."
           link="https://harshul23.github.io/Plex/"
           image="/plex.png"
         />
