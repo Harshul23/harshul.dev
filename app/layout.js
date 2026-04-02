@@ -1,5 +1,6 @@
 import { Inter, Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "./smooth-scroll";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${poppins.variable} ${openSans.variable}`}
       >
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

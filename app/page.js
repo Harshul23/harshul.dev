@@ -21,17 +21,23 @@ export default function Home() {
 
   return (
     <div
-      className={`${inter.variable} flex min-h-screen w-full flex-col items-center bg-black font-poppins`}
+      className={`${inter.variable} flex min-h-screen w-full flex-col items-center bg-black font-poppins text-white`}
     >
       {/* Navigation Header */}
-      <div className="m-2 sm:m-4 flex h-16 sm:h-[72px] w-[95%] sm:w-[90%] items-center justify-between gap-4 sm:gap-8 md:gap-16 lg:gap-64 rounded-2xl border border-white/50 px-4 sm:pr-4 text-white">
+      <div className="m-2 sm:m-4 flex h-16 sm:h-[72px] w-[95%] sm:w-[90%] items-center justify-between gap-4 sm:gap-8 md:gap-16 lg:gap-64 rounded-2xl border border-white/50 pr-4 sm:pr-8 text-white">
         <LiquidNameTag active={isImageHovered} />
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-4 lg:gap-8 xl:gap-34">
-          <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
-          <Link href="/" className="hover:text-white/70 transition-colors">About</Link>
-          <Link href="/" className="hover:text-white/70 transition-colors">Projects</Link>
+          <Link href="/" className="hover:text-white/70 transition-colors">
+            Home
+          </Link>
+          <Link href="/" className="hover:text-white/70 transition-colors">
+            About
+          </Link>
+          <Link href="/" className="hover:text-white/70 transition-colors">
+            Projects
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -73,7 +79,7 @@ export default function Home() {
         </div>
       )}
 
-      <div className="flex min-h-9/10 w-full flex-col">
+      <div className="flex min-h-2/10 w-full flex-col">
         {/* Hero Section */}
         <div className="flex min-h-[70vh] w-full items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16 lg:py-24">
           <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10 max-w-7xl">
@@ -101,11 +107,11 @@ export default function Home() {
 
             {/* Text Content */}
             <div className="flex flex-col gap-3 sm:gap-4 text-center md:text-left">
-              <div className="relative inline-block overflow-hidden rounded-3xl">
-                <span
-                  className="relative z-10 block font-[family-name:var(--font-inter)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-black leading-none uppercase transition-colors"
-                >
-                  FULLSTACK <br /> DEVELOPER
+              <div className="relative inline-block overflow-hidden rounded-lg py-2 pr-12">
+                <span className="relative z-10 block font-[family-name:var(--font-inter)] text-3xl sm:text-4xl md:text-5xl lg:text-2xl xl:text-8xl font-bold leading-none uppercase transition-colors">
+                  I'm a CSE (AI) student focused on building modern web
+                  applications, with strong frontend experience and growing
+                  backend skills.
                 </span>
               </div>
 
@@ -119,7 +125,13 @@ export default function Home() {
         <TechStackSlider />
       </div>
 
-      <Projects />
+      <div className="w-full block">
+        <Projects />
+      </div>
+
+      <div className="flex items-center justify-center text-8xl text-white h-screen w-full px-4 sm:px-6 md:px-8 lg:px-12 text-center">
+        Let&apos;s build Together
+      </div>
     </div>
   );
 }
